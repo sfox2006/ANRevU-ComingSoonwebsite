@@ -1,5 +1,5 @@
-const SUPABASE_URL = "";
-const SUPABASE_ANON_KEY = "";
+const SUPABASE_URL = "https://syjwhamhkaxbyiprmyfo.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "sb_publishable_spCWs_piKtB_EjKfyGl7Pw_q7QJQZ1w";
 const WAITLIST_TABLE = "anrevu_waitlist";
 
 const form = document.querySelector("#waitlistForm");
