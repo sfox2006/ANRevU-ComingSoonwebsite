@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0b0b">
+    <meta
+      name="description"
+      content="Join the ANRevU waitlist for honest student reviews of ANU courses and academics."
+    >
+    <title>ANRevU | Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="/" aria-label="ANRevU home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-word">ANRevU</span>
+      </a>
+      <a class="header-link" href="mailto:hello@anrevu.com">Collaborate</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Student-built course insight for ANU</p>
+          <h1 id="hero-title">Find out what a course is actually like.</h1>
+          <p class="hero-lede">
+            ANRevU is an independent student-built platform where students can read and share honest
+            reviews of ANU courses and academics before enrolment decisions are locked in.
+          </p>
+          <div class="hero-points" aria-label="What ANRevU will support">
+            <span>Course reviews</span>
+            <span>Academic reviews</span>
+            <span>Student-first context</span>
+          </div>
+        </div>
+
+        <section class="signup-panel" aria-labelledby="signup-title">
+          <p class="panel-kicker">Coming soon</p>
+          <h2 id="signup-title">Join the waitlist</h2>
+          <p class="panel-copy">
+            Be first to hear when ANRevU launches and when student submissions open.
+          </p>
+
+          <form id="waitlistForm" class="waitlist-form" novalidate>
+            <label class="field">
+              <span>Name <small>optional</small></span>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                placeholder="you@example.com"
+                required
+              >
+            </label>
+
+            <label class="checkbox-field">
+              <input id="isAnuStudent" name="isAnuStudent" type="checkbox">
+              <span>I am an ANU student</span>
+            </label>
+
+            <button id="submitButton" class="primary-button" type="submit">Join the waitlist</button>
+            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </section>
+
+      <section class="story-section" aria-labelledby="why-title">
+        <div class="section-heading">
+          <p class="eyebrow">Why it exists</p>
+          <h2 id="why-title">Course choice should not depend on who you happen to know.</h2>
+        </div>
+        <div class="story-grid">
+          <article>
+            <h3>Less guesswork</h3>
+            <p>
+              Handbook entries and official summaries matter, but they rarely answer the questions
+              students ask each other: workload, assessment clarity, teaching style, and whether the
+              course matches the pitch.
+            </p>
+          </article>
+          <article>
+            <h3>Better decisions</h3>
+            <p>
+              ANRevU is designed to reduce information asymmetry by collecting practical student
+              experience in one place, helping students compare courses before they commit.
+            </p>
+          </article>
+          <article>
+            <h3>Student helping student</h3>
+            <p>
+              The platform only works if students contribute honestly and constructively. Every review
+              helps the next student make a more informed choice.
+            </p>
+          </article>
+          <article>
+            <h3>Independent and not-for-profit</h3>
+            <p>
+              ANRevU is student-funded and not-for-profit. The goal is useful academic transparency,
+              not selling student attention or pretending to speak for the university.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-band" aria-label="ANRevU principle">
+        <p>
+          Built for the moment before enrolment, when a clear student perspective can change a whole
+          semester.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>ANRevU</strong>
+        <p>
+          ANRevU is an independent student-built platform. It is not affiliated with, endorsed by,
+          sponsored by, or operated by The Australian National University.
+        </p>
+      </div>
+      <p>
+        Student contributors, collaborators, and campus groups can reach out at
+        <a href="mailto:hello@anrevu.com">hello@anrevu.com</a>.
+      </p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
