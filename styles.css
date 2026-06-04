@@ -46,7 +46,7 @@ a {
 .story-section,
 .quote-band,
 .site-footer {
-  width: min(1120px, calc(100% - 40px));
+  width: min(1380px, calc(100% - 96px));
   margin-inline: auto;
 }
 
@@ -95,14 +95,14 @@ a {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 430px);
-  gap: 48px;
+  grid-template-columns: minmax(560px, 1fr) minmax(380px, 480px);
+  gap: clamp(48px, 7vw, 104px);
   align-items: center;
-  padding: 56px 0 68px;
+  padding: 48px 0 70px;
 }
 
 .hero-copy {
-  max-width: 720px;
+  max-width: 880px;
 }
 
 .eyebrow,
@@ -123,16 +123,16 @@ p {
 }
 
 h1 {
-  max-width: 780px;
+  max-width: 900px;
   margin-bottom: 24px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3rem, 7.1vw, 5.95rem);
+  font-size: clamp(3.4rem, 5.6vw, 6.2rem);
   line-height: 0.98;
   letter-spacing: 0;
 }
 
 .hero-lede {
-  max-width: 650px;
+  max-width: 760px;
   color: #332f28;
   font-size: clamp(1.08rem, 2vw, 1.35rem);
   line-height: 1.65;
@@ -286,13 +286,13 @@ h1 {
 }
 
 .section-heading {
-  max-width: 760px;
+  max-width: 940px;
 }
 
 .section-heading h2 {
   margin-bottom: 34px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3.45rem);
+  font-size: clamp(2rem, 3.4vw, 3.8rem);
   line-height: 1.06;
 }
 
@@ -325,7 +325,7 @@ h1 {
 }
 
 .quote-band p {
-  max-width: 850px;
+  max-width: 980px;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.55rem, 3vw, 2.4rem);
@@ -356,6 +356,14 @@ h1 {
 }
 
 @media (max-width: 900px) {
+  .site-header,
+  .hero,
+  .story-section,
+  .quote-band,
+  .site-footer {
+    width: min(100% - 40px, 1120px);
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 34px;
